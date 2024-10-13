@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide:nth-child(1) { opacity: 1; }
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    z-index: 1;
+    font-family: Arial, sans-serif;
+
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+#inicio{
+    padding: 50px;
+    font-family: Arial, sans-serif;
+
+
+}
+
+
+.recetas {
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+
+}
+
+.receta {
+    margin: 15px 0;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ece2e2;
+    position: relative;
+}
+
+.titulo {
+    cursor: pointer;
+    position: relative;
+}
+
+.imagen-hover {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 400px; /* Asegúrate de que el contenedor tenga un tamaño adecuado */
+    border: 4px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 10;
+    padding: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-hover img {
+    width: 100%; /* La imagen ocupa todo el contenedor */
+    height: 100%; /* Mantiene la altura del contenedor */
+    object-fit: cover; /* Recorta la imagen si es necesario */
+    border-radius: 5px;
+}
+
+#img-receta {
+    
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #bbb3be;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+
+h2, h3 {
+    color: #333;
+}
+.comentarios-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #bdb8a3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+#comentarios-lista {
+    margin-top: 20px;
+}
+
+.comentario {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.comentario:last-child {
+    border-bottom: none; /* Elimina el borde del último comentario */
+}
